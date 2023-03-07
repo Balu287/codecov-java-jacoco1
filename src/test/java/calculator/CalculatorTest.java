@@ -32,4 +32,11 @@ public class CalculatorTest {
     assertEquals(Calculator.multiply(2.0, 0), 0.0, DELTA);
     assertEquals(Calculator.multiply(-4, 2.0), -8.0, DELTA);
   }
+@Test
+  public void testDivide() {
+    assertEquals(Calculator.divide(1, 2), 0.5, DELTA);
+    assertEquals(Calculator.divide(1.0, 2.0), 0.5, DELTA);
+    assertEquals(Calculator.divide(0, 2.0), 0, DELTA);
+    assertEquals(Calculator.divide(-4, 2.0), -2.0, DELTA);
+  }
 }
