@@ -2,7 +2,7 @@ coverage:
   status:
     project:
       default:
-        target: 50%
+        target: 100%
         threshold: 1%
         branches: 
           - main
