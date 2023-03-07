@@ -4,7 +4,3 @@ coverage:
       default:
         target: 100%
         threshold: 1%
-        branches: 
-          - main
-        if_ci_failed: error #success, failure, error, ignore
-        only_pulls: false
