@@ -3,4 +3,8 @@ coverage:
     project:
       default:
         target: 50%
-        threshold: 45%
+        threshold: 1%
+        branches: 
+          - main
+        if_ci_failed: error #success, failure, error, ignore
+        only_pulls: false

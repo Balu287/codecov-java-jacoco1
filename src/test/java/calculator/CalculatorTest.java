@@ -24,4 +24,12 @@ public class CalculatorTest {
     assertEquals(Calculator.subtract(2.0, 0), 2.0, DELTA);
     assertEquals(Calculator.subtract(-4, 2.0), -6.0, DELTA);
   }
+@Test
+  public void testMultiply() {
+    assertEquals(Calculator.multiply(1, 2), 2.0, DELTA);
+    assertEquals(Calculator.multiply(1.0, 2.0), 2.0, DELTA);
+    assertEquals(Calculator.multiply(0, 2.0), 0.0, DELTA);
+    assertEquals(Calculator.multiply(2.0, 0), 0.0, DELTA);
+    assertEquals(Calculator.multiply(-4, 2.0), -8.0, DELTA);
+  }
 }
