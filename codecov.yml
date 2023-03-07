@@ -1,31 +1,6 @@
 coverage:
   status:
     project:
-      default: off
-      frontend:
-        flags: 
-          - frontend
-      backend:
-        target: 50%
-        flags: 
-          - backend
-      api:
-        target: 89%
-        flags: 
-          - api
-
-flags:
-  # filter the folder(s) you wish to measure by that flag
-  backend:
-    # only include files in the backend folder
-    paths: #note, accepts globs, not regexes
-      - app/backend/
-  frontend:
-    paths:
-      - app/frontend/
-  api:
-    paths:
-      - app/api/
-  tests:
-    paths:
-      - tests/
+      default:
+        target: 100%
+        threshold: 1%
